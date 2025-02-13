@@ -6205,7 +6205,6 @@ function dol_print_error($db = null, $error = '', $errors = null)
 		$out .= "<br>\n";
 	}
 
-
 	// Return a http header with error code if possible
 	if (!headers_sent()) {
 		if (function_exists('top_httphead')) {	// In CLI context, the method does not exists
