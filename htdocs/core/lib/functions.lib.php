@@ -6195,10 +6195,10 @@ function dol_print_error($db = null, $error = '', $errors = null)
 	}
 	if (empty($dolibarr_main_prod) && !empty($_SERVER['DOCUMENT_ROOT']) && function_exists('xdebug_print_function_stack') && function_exists('xdebug_call_file')) {
 		xdebug_print_function_stack();
-		$out .= '<b>XDebug information:</b>'."<br>\n";
-		$out .= 'File: '.xdebug_call_file()."<br>\n";
-		$out .= 'Line: '.xdebug_call_line()."<br>\n";
-		$out .= 'Function: '.xdebug_call_function()."<br>\n";
+		$out .= '<b>XDebug information:</b><br>' . "\n";
+		$out .= 'File: ' . xdebug_call_file() . '<br>' . "\n";
+		$out .= 'Line: ' . xdebug_call_line() . '<br>' . "\n";
+		$out .= 'Function: ' . xdebug_call_function() . '<br>' . "\n";
 		$out .= "<br>\n";
 	}
 
