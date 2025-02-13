@@ -6194,7 +6194,7 @@ function dol_print_error($db = null, $error = '', $errors = null)
 		}
 	}
 	if (empty($dolibarr_main_prod)
-    	&& !empty($_SERVER['DOCUMENT_ROOT'])
+		&& !empty($_SERVER['DOCUMENT_ROOT'])
 		&& function_exists('xdebug_call_file')
 		&& function_exists('xdebug_call_line')
 		&& function_exists('xdebug_call_function')) {
